@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+        <h1 id="h1" class="hide">Welcome to Tic Tac Toe</h1>
+    </section>
+    <!-- Game Homepage -->
+    <section id="homepage" class="hide">
+        <button class="homebtn" id="newgame">New Game</button>
+        <button class="homebtn" id="help">Help</button>
+        <button class="homebtn" id="about">About</button>
+    </section>
+    <!-- Game gamepage -->
+    <section id="gamepage" class="hide">
+    <h1>Tic Tac Toe</h1>
+    <button class="homebtn" id="backTohome">Back To Home</button>
+    <div class="container">
+        <div class="score">
+            <div class="player1">Player1:0</div>
+            <div class="draw">Draw:0</div>
+            <div class="player2">Player2:0</div>
+        </div>
+            <div id="box">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="homebtn" id="resetgame">Reset Game</button>
+            </div>
+   
+            <div class="msg hide"></div>
+        </div>
+    </section>
+        <section id="Help" class="hide">
+            <h3>How to play:</h3>
+            <p class="help">Match any 3 boxes in any winning patterns. <br>
+                Here are winning patterns: <br>
+               <span class="pattern"> [1,2,3],
+                [1,4,7]-
+                [1,5,9]-
+                [2,5,8]-
+                [3,5,7]-
+                [3,6,9]-
+                [4,5,6]-
+                [6,7,8]</span><br>
+                from these following pattern you can win by matching sequances.
+            </p>
+            <button class="homebtn" id="backtoHome">Back To Home</button>
+        </section>
+   <section id="About" class="hide">
+    <h3 class="about">About developer:</h3>
+    <p class="info">This game is build by Rashid Rafi with the help of VS Code. Here are my personal info &ldsh; <br>
+        <span class="email"><b>Email:</b></span> rashid.raf67@gmail.com</span> <br> <span class="cell"><b>Cell#</b></span>+923363781816</p>
+        <button class="homebtn" id="backtohome">Back To Home</button>
+   </section>
+   <!-- Winner Popup -->
+   <div class="popup hide">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h1>Congratulations!</h1>
+        <p class="msg-winner">Player X wins!</p>
+
+    </div>
+   </div>
+    </main>
+    <footer>&copy;All rights reserved by developer. Privacy Policy 2024</footer>
+    <script src="script.js"></script>
+</body>
+</html>

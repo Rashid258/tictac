@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(220deg, #ff1, #ff12af);
+    justify-content: center;
+    align-items: center;
+
+}
+section{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin-top: 1rem;
+    height: 70vh;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin; 
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0, 0.3);
+    font-size: 8vmin;
+    color: #ec0707;
+    background-color: #fff;
+}
+.homebtn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191814;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin: 1rem;
+}
+.hide{
+    display: none;
+}
+p{
+    font-size: 3em;
+}
+h3{
+    font-size: 5em;
+    color: #ff1;
+}
+.pattern{
+    color: aqua;
+}
+.email, .cell{
+    color: #c8d378;
+}
+.score{
+    font-size: 2em;
+    display: flex;
+    grid-column: auto;
+    color: #573004;
+    /* justify-self: center; */
+    justify-content: space-between;
+}
+.popup{
+    /* display: none; */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+.popup-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0.8em;
+    border: 0.01em solid #888;
+    width: 80%;
+    max-width: 45vmin;
+    text-align: center;
+    border-radius: 0.6rem;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color:#fff;
+    text-decoration: none;
+    border: 3px solid red;
+    cursor: pointer;
+    height: 2.1rem;
+    width: 2rem; 
+    background-color: red;
+    
+}
+
+footer{
+
+    padding: .5em;
+    margin-top: 2em;
+    background: linear-gradient(#ffba92, #92a21a);
+    font-size: 1.5rem;
+}
